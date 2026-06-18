@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 15px 30px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: lightblue;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .hero button {
+      padding: 12px 20px;
+      border: none;
+      background: white;
+      color: black;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: black;
+      color: white;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill-box {
+      background: white;
+      padding: 20px;
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 12px;
+      border: none;
+      background: #222;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background: #4facfe;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>Student Portfolio</h1>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hello, I'm Shindara</h2>
+  <p>Frontend Developer & Student</p>
+  <button>Download CV</button>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I enjoy building websites and learning new technologies.
+    I love coding, design, and creating modern web applications.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+     <h3>
+<a href="https://legendary-selkie-0050da.netlify.app/" target="_blank">
+            Portfolio Website
+</a>
+</h3>
+      <p>A personal responsive portfolio website.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+<a href="https://courageous-mochi-10c131.netlify.app/" target="_blank">
+           To Do App
+</a>
+</h3>
+      <p>A task management app using JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+<a href="https://ornate-puffpuff-5415c3.netlify.app/" target="_blank">
+            E-Commerce Store
+</a>
+</h3>
+      <p>An online shopping website with cart features.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+<a href="https://schoolwebsiteo.netlify.app/" target="_blank">
+            Oakfield Academy
+</a>
+</h3>
+      <p>An online shopping website with cart features.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+<a href="https://teal-jalebi-1cf3fb.netlify.app/" target="_blank">
+            Custom Calculator
+</a>
+</h3>
+      <p>An online shopping website with cart features.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>
+<a href="https://celadon-sunflower-5d72ad.netlify.app/" target="_blank">
+            My Profile
+</a>
+</h3>
+      <p>An online shopping website with cart features.</p>
+    </div>
+
+
+    <div class="project-card">
+      <h3>E-Commerce Store</h3>
+      <p>An online shopping website with cart features.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+
+    <input type="email" placeholder="Your Email" required>
+
+    <textarea rows="5" placeholder="Your Message"></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 My Portfolio | All Rights Reserved</p>
+</footer>
+
+<script>
+  document.getElementById("contactForm")
+    .addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    alert("Message Sent Successfully!");
+  });
+</script>
+
+</body>
+</html>
